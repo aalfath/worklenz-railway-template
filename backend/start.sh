@@ -21,6 +21,6 @@ esac
 
 node /app/railway/init-db.js
 echo "[railway] applying database migrations"
-node scripts/migrate.js up
+node scripts/migrate.js up --no-verbose
 echo "[railway] starting Worklenz API on port ${PORT}"
 exec node build/bin/www
