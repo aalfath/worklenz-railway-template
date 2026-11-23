@@ -22,6 +22,7 @@ ENV NODE_ENV=production \
     STORAGE_PROVIDER=s3 \
     S3_BUCKET=worklenz-bucket \
     S3_REGION=us-east-1 \
+    S3_ACCESS_KEY_ID=worklenz \
     SESSION_NAME=worklenz.sid \
     DB_MAX_CLIENTS=10 \
     USE_PG_NATIVE=false \
