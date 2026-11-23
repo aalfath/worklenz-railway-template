@@ -19,6 +19,7 @@ server {
     # Worklenz API, auth, CSRF and link previews.
     location ~ ^/(api|secure|public|webhook|csrf-token)(/|$) {
         include /etc/nginx/proxy_headers.conf;
+        proxy_read_timeout 120s;
         proxy_pass http://$worklenz_api;
     }
 

@@ -8,5 +8,4 @@ ENV PORT=8333 \
     GOMAXPROCS=2 \
     GOMEMLIMIT=300MiB
 EXPOSE 8333
-VOLUME /data
 ENTRYPOINT ["/railway-start.sh"]
